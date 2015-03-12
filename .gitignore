@@ -9,7 +9,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-=======
+
 *.gem
 *.rbc
 /.config
