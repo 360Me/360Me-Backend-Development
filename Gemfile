@@ -5,6 +5,9 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-linkedin'
 
+#Server
+gem 'puma'
+
 # Database
 gem 'pg'
 
