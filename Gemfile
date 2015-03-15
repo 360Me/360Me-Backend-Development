@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Authentication
 gem 'devise'
 gem 'omniauth'
-gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-linkedin'
 
 # Database
 gem 'pg'

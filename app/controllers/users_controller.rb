@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :xml, :json
 
   # GET /users/:id.:format
   def show
@@ -9,6 +10,13 @@ class UsersController < ApplicationController
   # GET /users/:id/edit
   def edit
     # authorize! :update, @user
+  end
+  
+  def index
+    respond_with @users do |format|
+      format.html { render }
+      format.json { render }
+    end
   end
 
   # PATCH/PUT /users/:id.:format

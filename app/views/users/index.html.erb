@@ -1,9 +1,10 @@
+<h1>Me360</h1>
 <% if user_signed_in? %>
 Signed in as <%= current_user.email %>. Not you?
 <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
 
 <p>
-  <%= current_user.registered_user %>
+  <% %>
 </p>
 
 <% else %>
@@ -11,3 +12,7 @@ Signed in as <%= current_user.email %>. Not you?
 <%= link_to "Sign in", new_user_session_path %><br>
 <%= link_to "Sign in with LinkedIn", user_omniauth_authorize_path(:linkedin) %>
 <% end %>
+
+<p>
+  <%= link_to "GitHub", "https://github.com/360Me" %> | <%= link_to "Slack", "https://me360.slack.com/messages/general/" %>
+</p>
