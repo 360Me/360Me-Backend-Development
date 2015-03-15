@@ -7,7 +7,7 @@ Devise.setup do |config|
   # config.secret_key = '9ee7da084fa43854bd00efe3c2badb679c84f9e2b116331f8d735f0cbe9860181817d66efd5ce597f1e931516e3cfa6e82b40caf231e321abad6445f677a9238'
   
   # LinkedIn Key/Secret
-  config.omniauth :linked_in, "KEY", "SECRET"
+  config.omniauth :linkedin, "78qlyjyxxiinn1", "sMd7rV8Mmvx7xOQw", :scope => 'r_fullprofile r_emailaddress r_network'
   
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
