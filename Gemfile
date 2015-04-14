@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
 
 # Authentication
-gem 'devise'
-gem 'omniauth'
+gem 'devise'#, '1.4.5'
+gem 'omniauth'#, '1.0.0'
 gem 'omniauth-linkedin'
+
+#Rails API
+gem 'rails-api'
+
+gem 'active_model_serializers', '~> 0.8.3' # NOTE: not the 0.9
 
 #Server
 gem 'puma'
@@ -33,8 +38,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

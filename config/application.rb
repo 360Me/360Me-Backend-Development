@@ -8,7 +8,10 @@ Bundler.require(*Rails.groups)
 
 module Me360Backend
   class Application < Rails::Application
-   # config.middleware.insert_before ActionDispatch::ParamsParser, "SelectiveStack"
+    config.middleware.insert_before ActionDispatch::ParamsParser, "SelectiveStack"
+    #config.omniauth :linkedin, "78qlyjyxxiinn1", "sMd7rV8Mmvx7xOQw"
+    #  config.middleware.insert_before ActionDispatch::ParamsParser, "SelectiveStack"
+    # config.middleware.insert_before ActionDispatch::ParamsParser, "SelectiveStack"
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
